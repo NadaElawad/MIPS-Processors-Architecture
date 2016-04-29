@@ -1,0 +1,426 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\MyDataTypes.vhd" into library work
+Parsing package <MyDataTypes>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\OrGate.vhd" into library work
+Parsing entity <OrGate>.
+Parsing architecture <Behavioral> of entity <orgate>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\OneBitAdder.vhd" into library work
+Parsing entity <OneBitAdder>.
+Parsing architecture <Behavioral> of entity <onebitadder>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\MyPackage.vhd" into library work
+Parsing package <MyPackage>.
+Parsing package body <MyPackage>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\Mux4x1.vhd" into library work
+Parsing entity <Mux4x1>.
+Parsing architecture <Behavioral> of entity <mux4x1>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\AndGate.vhd" into library work
+Parsing entity <AndGate>.
+Parsing architecture <Behavioral> of entity <andgate>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\OneBitALU.vhd" into library work
+Parsing entity <OneBitALU>.
+Parsing architecture <Behavioral> of entity <onebitalu>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\MUX_2x1.vhd" into library work
+Parsing entity <Mux2x1>.
+Parsing architecture <Behavioral> of entity <mux2x1>.
+Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" Line 55: Actual for formal port mux_in2 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" Line 56: Actual for formal port mux_in2 is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux2x1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <OneBitALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <OneBitAdder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <AndGate> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <OrGate> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux4x1> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd".
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 58: Output port <Set> of the instance <A0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 59: Output port <Set> of the instance <A1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 60: Output port <Set> of the instance <A2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 61: Output port <Set> of the instance <A3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 62: Output port <Set> of the instance <A4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 63: Output port <Set> of the instance <A5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 64: Output port <Set> of the instance <A6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 65: Output port <Set> of the instance <A7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 66: Output port <Set> of the instance <A8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 67: Output port <Set> of the instance <A9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 68: Output port <Set> of the instance <A10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 69: Output port <Set> of the instance <A11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 70: Output port <Set> of the instance <A12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 71: Output port <Set> of the instance <A13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 72: Output port <Set> of the instance <A14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 73: Output port <Set> of the instance <A15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 74: Output port <Set> of the instance <A16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 75: Output port <Set> of the instance <A17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 76: Output port <Set> of the instance <A18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 77: Output port <Set> of the instance <A19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 78: Output port <Set> of the instance <A20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 79: Output port <Set> of the instance <A21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 80: Output port <Set> of the instance <A22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 81: Output port <Set> of the instance <A23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 82: Output port <Set> of the instance <A24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 83: Output port <Set> of the instance <A25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 84: Output port <Set> of the instance <A26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 85: Output port <Set> of the instance <A27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 86: Output port <Set> of the instance <A28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 87: Output port <Set> of the instance <A29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\MainModule\ALU.vhd" line 88: Output port <Set> of the instance <A30> is unconnected or connected to loadless signal.
+    Summary:
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Mux2x1>.
+    Related source file is "C:\Users\nadaa\Desktop\Projects\MainModule\MUX_2x1.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux2x1> synthesized.
+
+Synthesizing Unit <OneBitALU>.
+    Related source file is "C:\Users\nadaa\Desktop\Projects\MainModule\OneBitALU.vhd".
+WARNING:Xst:647 - Input <ALUOp<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <OneBitALU> synthesized.
+
+Synthesizing Unit <OneBitAdder>.
+    Related source file is "C:\Users\nadaa\Desktop\Projects\MainModule\OneBitAdder.vhd".
+    Summary:
+Unit <OneBitAdder> synthesized.
+
+Synthesizing Unit <AndGate>.
+    Related source file is "C:\Users\nadaa\Desktop\Projects\MainModule\AndGate.vhd".
+    Summary:
+	no macro.
+Unit <AndGate> synthesized.
+
+Synthesizing Unit <OrGate>.
+    Related source file is "C:\Users\nadaa\Desktop\Projects\MainModule\OrGate.vhd".
+    Summary:
+	no macro.
+Unit <OrGate> synthesized.
+
+Synthesizing Unit <Mux4x1>.
+    Related source file is "C:\Users\nadaa\Desktop\Projects\MainModule\Mux4x1.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <output_in0_MUX_104_o> created at line 39.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux4x1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 34
+ 1-bit 4-to-1 multiplexer                              : 32
+ 32-bit 2-to-1 multiplexer                             : 2
+# Xors                                                 : 65
+ 1-bit xor2                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Users\nadaa\Desktop\Programs\Xilinx\14.5\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Users\nadaa\Desktop\Programs\Xilinx\14.5\ISE_DS\ISE\.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 34
+ 1-bit 4-to-1 multiplexer                              : 32
+ 32-bit 2-to-1 multiplexer                             : 2
+# Xors                                                 : 65
+ 1-bit xor2                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 106
+#      LUT2                        : 33
+#      LUT3                        : 1
+#      LUT5                        : 20
+#      LUT6                        : 52
+# IO Buffers                       : 104
+#      IBUF                        : 69
+#      OBUF                        : 35
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  106  out of  63400     0%  
+    Number used as Logic:               106  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    106
+   Number with an unused Flip Flop:     106  out of    106   100%  
+   Number with an unused LUT:             0  out of    106     0%  
+   Number of fully used LUT-FF pairs:     0  out of    106     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         104
+ Number of bonded IOBs:                 104  out of    210    49%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 16.495ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4400 / 35
+-------------------------------------------------------------------------
+Delay:               16.495ns (Levels of Logic = 22)
+  Source:            aluop<2> (PAD)
+  Destination:       zflag (PAD)
+
+  Data Path: aluop<2> to zflag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            51   0.001   0.488  aluop_2_IBUF (aluop_2_IBUF)
+     LUT2:I1->O            2   0.097   0.748  Mux1/Mmux_mux_out11 (data2Final<0>)
+     LUT6:I1->O            3   0.097   0.765  A1/OneBitAdderX/CarryOut1 (carryOut<2>)
+     LUT6:I0->O            3   0.097   0.765  A3/OneBitAdderX/CarryOut1 (carryOut<4>)
+     LUT6:I0->O            3   0.097   0.765  A5/OneBitAdderX/CarryOut1 (carryOut<6>)
+     LUT6:I0->O            3   0.097   0.765  A7/OneBitAdderX/CarryOut1 (carryOut<8>)
+     LUT6:I0->O            3   0.097   0.765  A9/OneBitAdderX/CarryOut1 (carryOut<10>)
+     LUT6:I0->O            3   0.097   0.765  A11/OneBitAdderX/CarryOut1 (carryOut<12>)
+     LUT6:I0->O            3   0.097   0.765  A13/OneBitAdderX/CarryOut1 (carryOut<14>)
+     LUT6:I0->O            3   0.097   0.765  A15/OneBitAdderX/CarryOut1 (carryOut<16>)
+     LUT6:I0->O            3   0.097   0.765  A17/OneBitAdderX/CarryOut1 (carryOut<18>)
+     LUT6:I0->O            3   0.097   0.765  A19/OneBitAdderX/CarryOut1 (carryOut<20>)
+     LUT6:I0->O            3   0.097   0.765  A21/OneBitAdderX/CarryOut1 (carryOut<22>)
+     LUT6:I0->O            3   0.097   0.765  A23/OneBitAdderX/CarryOut1 (carryOut<24>)
+     LUT6:I0->O            3   0.097   0.765  A25/OneBitAdderX/CarryOut1 (carryOut<26>)
+     LUT6:I0->O            3   0.097   0.765  A27/OneBitAdderX/CarryOut1 (carryOut<28>)
+     LUT6:I0->O            2   0.097   0.748  A29/OneBitAdderX/CarryOut1 (carryOut<30>)
+     LUT5:I0->O            3   0.097   0.583  A30/OneBitAdderX/CarryOut1 (carryOut<31>)
+     LUT5:I2->O            2   0.097   0.360  A31/OneBitAdderX/Mxor_S_xo<0>1 (set<31>)
+     LUT6:I5->O            2   0.097   0.576  A31/Mux2/Mmux_output_in0_MUX_104_o1 (dataout_31_OBUF)
+     LUT3:I0->O            1   0.097   0.339  zflag7 (zflag_OBUF)
+     OBUF:I->O                 0.000          zflag_OBUF (zflag)
+    ----------------------------------------
+    Total                     16.495ns (1.941ns logic, 14.554ns route)
+                                       (11.8% logic, 88.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 48.00 secs
+Total CPU time to Xst completion: 47.39 secs
+ 
+--> 
+
+Total memory usage is 822860 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
+

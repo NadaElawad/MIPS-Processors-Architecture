@@ -1,0 +1,7 @@
+work	"ALUOP.vhd"
+work	"DEC_5x32.vhd"
+work	"MUX_32x1.vhd"
+work	"REG32.vhd"
+work	"RegisterFile.vhd"
+work	"my_data_types.vhd"
+work	"my_package.vhd"
