@@ -56,5 +56,5 @@ architecture Behavioral of OneBitALU is
 		MuxOut(2) <= Result;
 		MuxOut(3) <= Less;
 		Set <= Result;
-		Mux2: Mux4x1 port map(MuxOut(0),MuxOut(1),MuxOut(2),MuxOut(3),ALUOp(1 downto 0),S);
+		Mux2: MUX_4x1 port map(MuxOut(0),MuxOut(1),MuxOut(2),MuxOut(3),ALUOp(1 downto 0),S);
 end Behavioral;

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/nadaa/Desktop/Projects/MainModule/OneBitALU.vhd";
+static const char *ng0 = "C:/Users/nadaa/OneDrive/Documents/MIPS-Processors-Architecture/OneBitALU.vhd";
 
 
 

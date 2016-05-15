@@ -23,15 +23,15 @@ use work.ALUDataTypes.ALL;
 use work.ALUPackage.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity Mux2x1 is
+entity MUX_2x1 is
     Port ( 
 	        mux_in1 : in  STD_LOGIC_VECTOR(31 downto 0);
 	        mux_in2 : in  STD_LOGIC_VECTOR(31 downto 0);
 	        mux_sel : in  STD_LOGIC;
            mux_out : out  STD_LOGIC_VECTOR(31 downto 0));
-end Mux2x1;
+end MUX_2x1;
 
-architecture Behavioral of Mux2x1 is
+architecture Behavioral of MUX_2x1 is
 	begin
 		mux_out <= mux_in1 when mux_sel = '0'
 		else mux_in2 when mux_sel = '1';

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/nadaa/Desktop/Projects/MainModule/MUX_32x1.vhd";
+static const char *ng0 = "C:/Users/nadaa/OneDrive/Documents/MIPS-Processors-Architecture/MUX_32x1.vhd";
 extern char *WORK_P_2068306407;
 
 char *work_p_2068306407_sub_2223697731_742381235(char *, char *, char *, char *, char *, char *);
@@ -49,10 +49,10 @@ LAB0:    xsi_set_current_line(36, ng0);
 
 LAB3:    t2 = (t0 + 1192U);
     t3 = *((char **)t2);
-    t2 = (t0 + 5244U);
+    t2 = (t0 + 5404U);
     t4 = (t0 + 1032U);
     t5 = *((char **)t4);
-    t4 = (t0 + 5228U);
+    t4 = (t0 + 5388U);
     t6 = work_p_2068306407_sub_2223697731_742381235(WORK_P_2068306407, t1, t3, t2, t5, t4);
     t7 = (t1 + 12U);
     t8 = *((unsigned int *)t7);

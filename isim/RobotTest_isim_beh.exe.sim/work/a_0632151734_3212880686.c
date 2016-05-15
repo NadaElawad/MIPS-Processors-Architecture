@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/nadaa/Desktop/Projects/MainModule/REG32.vhd";
+static const char *ng0 = "C:/Users/nadaa/OneDrive/Documents/MIPS-Processors-Architecture/REG32.vhd";
 extern char *IEEE_P_3620187407;
 
 char *ieee_p_3620187407_sub_436279890_3965413181(char *, char *, char *, char *, int );
@@ -112,7 +112,7 @@ LAB8:    xsi_set_current_line(46, ng0);
 LAB11:    xsi_set_current_line(47, ng0);
     t2 = (t0 + 1992U);
     t5 = *((char **)t2);
-    t2 = (t0 + 5844U);
+    t2 = (t0 + 6064U);
     t8 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t16, t5, t2, 1);
     t11 = (t16 + 12U);
     t17 = *((unsigned int *)t11);

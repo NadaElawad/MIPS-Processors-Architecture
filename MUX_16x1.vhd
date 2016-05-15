@@ -32,15 +32,15 @@ use work.MyPackage.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Mux16x1 is
+entity MUX_16x1 is
 PORT(
 		mux_in : in std_logic_vector(15 downto 0);
 		mux_sel : in std_logic_vector (3 downto 0);
 		mux_out : out std_logic
 		);
-end Mux16x1;
+end MUX_16x1;
 
-architecture Behavioral of Mux16x1 is
+architecture Behavioral of MUX_16x1 is
 
 begin
 	mux_out <= Mux161(mux_sel,mux_in);

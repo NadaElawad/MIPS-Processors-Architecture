@@ -51,11 +51,9 @@ signal and_out : std_logic_vector(31 downto 0);
 begin
 
  dec1 : DEC_5x32 port map(write_sel,'1',DecOut);
- andX : ANDOP port map(write_ena,DecOut(0),and_out(0));
- REGX : REG32 port map(write_data,clk,and_out(0),'0','0',reg_out(0));
- GEN_REG:  for I in 1 to 31 generate
-      andX : ANDOP port map(write_ena,DecOut(I),and_out(I));
-      REGX : REG32_1 port map(write_data,clk,and_out(I),'0','0',reg_out(I));
+ GEN_REG:  for I in 0 to 31 generate
+      andX : AndGate port map(write_ena,DecOut(I),and_out(I));
+      REGX : REG32 port map(write_data,clk,and_out(I),'0','0',reg_out(I));
  end generate;
  Mux1: MUX_32x1 port map(reg_out,read_sel1,data1);
  Mux2: MUX_32x1 port map(reg_out,read_sel2,data2);

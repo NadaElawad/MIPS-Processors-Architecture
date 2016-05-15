@@ -52,8 +52,8 @@ architecture Behavioral of ALU is
 	signal data1Final: std_logic_vector(31 downto 0);
 	signal set: std_logic_vector(31 downto 0);
 	begin
-		Mux1: Mux2x1 port map(data2,not(data2),aluop(2),data2Final);
-		Mux2: Mux2x1 port map(data1,not(data1),aluop(3),data1Final);
+		Mux1: MUX_2x1 port map(data2,not(data2),aluop(2),data2Final);
+		Mux2: MUX_2x1 port map(data1,not(data1),aluop(3),data1Final);
 		carryOut(0) <= cin;
 		A0: OneBitALU port map(data1Final(0),data2Final(0),set(31),carryOut(0),aluop,carryOut(1),aluOut(0),set(0));
 		A1: OneBitALU port map(data1Final(1),data2Final(1),'0',carryOut(1),aluop,carryOut(2),aluOut(1),set(1));
