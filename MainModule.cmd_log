@@ -5,3 +5,12 @@ xst -intstyle ise -ifn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I MainModule.ngc MainModule.ngd  
 map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MainModule_map.ncd MainModule.ngd MainModule.pcf 
 par -w -intstyle ise -ol high -mt off MainModule_map.ncd MainModule.ncd MainModule.pcf 
+xst -intstyle ise -ifn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.xst" -ofn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.syr" 
+xst -intstyle ise -ifn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.xst" -ofn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I MainModule.ngc MainModule.ngd  
+xst -intstyle ise -ifn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.xst" -ofn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I MainModule.ngc MainModule.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MainModule_map.ncd MainModule.ngd MainModule.pcf 
+xst -intstyle ise -ifn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.xst" -ofn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.syr" 
+par -w -intstyle ise -ol high -mt off MainModule_map.ncd MainModule.ncd MainModule.pcf 
+xst -intstyle ise -ifn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.xst" -ofn "C:/Users/nadaa/Desktop/Projects/M/MainModule/MainModule.syr" 

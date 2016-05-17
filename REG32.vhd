@@ -44,8 +44,8 @@ begin
   begin
     if(CLK' EVENT and CLK = '1')then 
 	   if(L = '1') then tmp <= I;
-	   elsif(INC = '1') then tmp <= tmp +1 ;
-	   elsif (CLR = '1') then tmp <=(others =>'0');
+	   elsif(INC = '1') then tmp <= tmp + 1;
+	   elsif (CLR = '1') then tmp <= (others =>'0');
 	   end if;
 	 end if;
   end process;

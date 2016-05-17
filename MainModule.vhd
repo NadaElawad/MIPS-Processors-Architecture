@@ -41,9 +41,6 @@ architecture Behavioral of MainModule is
 	signal AddressInFinal: STD_LOGIC_VECTOR (31 DOWNTO 0) := (OTHERS => '0'); 
 	signal AddressOut: STD_LOGIC_VECTOR (31 DOWNTO 0);
 	signal Data: STD_LOGIC_VECTOR (31 DOWNTO 0);
-	signal PCOut1: STD_LOGIC_VECTOR (31 DOWNTO 0);
-	signal TCOut: STD_LOGIC_VECTOR (3 DOWNTO 0);
-	signal ConOut: STD_LOGIC;
 	signal Reg1: STD_LOGIC_VECTOR (31 DOWNTO 0);
 	signal Reg2: STD_LOGIC_VECTOR (31 DOWNTO 0);
 	signal Result: STD_LOGIC_VECTOR (31 DOWNTO 0);
@@ -83,7 +80,7 @@ architecture Behavioral of MainModule is
 
 		RegisterCom: RegisterFile port map(Data(25 downto 21),Data(20 downto 16),WriteReg,RegWrite,CLK,WriteData,Reg1,Reg2);
 
-		Mux2: MUX_2x1 port map(Reg2,("0000000000000000"&Data(15 downto 0)),ALUSrc,Reg2_Final);
+		Mux2: MUX_2x1 port map(Reg2,BranchAddress,ALUSrc,Reg2_Final);
 
 		AluCom: ALU port map(Reg1,Reg2_Final,ALUOp,ALUOp(2),Result,carry,zero,overflow);
 

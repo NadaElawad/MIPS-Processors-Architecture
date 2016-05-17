@@ -36,13 +36,6 @@ component OrGate is
            O : out  STD_LOGIC);
 end component;
 
-component MUX_16x1 is
-PORT(
-		mux_in : in std_logic_vector(15 downto 0);
-		mux_sel : in std_logic_vector (3 downto 0);
-		mux_out : out std_logic);
-end component;
-
 component MUX_4x1 is
 	port(
 		in0 : in std_logic;
@@ -73,19 +66,11 @@ component OneBitALU is
 				Set: OUT STD_LOGIC);
 end component;
 
-function Mux161 (B : in std_logic_vector; A : in std_logic_vector) return std_logic;
 function NorX (B : in std_logic_vector) return std_logic;
 
 end ALUPackage;
 
 package body ALUPackage is
-function Mux161 (B : in std_logic_vector; A : in std_logic_vector) return std_logic 
-	is
-	variable element : std_logic;
-	begin  
-	element := A(to_integer(unsigned(B)));
-	return element;
-end Mux161;
 
 function NorX (B : in std_logic_vector) return std_logic
 	is

@@ -35,9 +35,6 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/nadaa/OneDrive/Documents/MIPS-Processors-Architecture/InstructionMemory.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/nadaa/OneDrive/Documents/MIPS-Processors-Architecture/MUX_16x1.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/nadaa/OneDrive/Documents/MIPS-Processors-Architecture/MUX_2x1.vhd&quot; into library work</arg>
 </msg>
 

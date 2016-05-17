@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Reading design: MainModule.prj
 
@@ -177,11 +177,10 @@ WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\ALU.vhd"
 Parsing VHDL file "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" into library work
 Parsing entity <MainModule>.
 Parsing architecture <Behavioral> of entity <mainmodule>.
-WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 74: Actual for formal port clr is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 76: Actual for formal port loadit is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 86: Actual for formal port mux_in2 is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 90: Actual for formal port loadit is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 102: Actual for formal port data2 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 71: Actual for formal port clr is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 73: Actual for formal port loadit is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 87: Actual for formal port loadit is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" Line 99: Actual for formal port data2 is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -235,15 +234,15 @@ Elaborating entity <SignExtend> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <MainModule>.
     Related source file is "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd".
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 78: Output port <Branch> of the instance <ControlUnitCom> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 88: Output port <cflag> of the instance <AluCom> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 88: Output port <oflag> of the instance <AluCom> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 100: Output port <cflag> of the instance <AluCom1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 100: Output port <zflag> of the instance <AluCom1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 100: Output port <oflag> of the instance <AluCom1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 102: Output port <cflag> of the instance <AluCom2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 102: Output port <zflag> of the instance <AluCom2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 102: Output port <oflag> of the instance <AluCom2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 75: Output port <Branch> of the instance <ControlUnitCom> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 85: Output port <cflag> of the instance <AluCom> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 85: Output port <oflag> of the instance <AluCom> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 97: Output port <cflag> of the instance <AluCom1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 97: Output port <zflag> of the instance <AluCom1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 97: Output port <oflag> of the instance <AluCom1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 99: Output port <cflag> of the instance <AluCom2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 99: Output port <zflag> of the instance <AluCom2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\nadaa\Desktop\Projects\M\MainModule\MainModule.vhd" line 99: Output port <oflag> of the instance <AluCom2> is unconnected or connected to loadless signal.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <MainModule> synthesized.
@@ -623,7 +622,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <OUTS[31]_MEM_READ_DLATCH_1155_q>
 WARNING:Xst:737 - Found 1-bit latch for signal <OUTS[31]_MEM_READ_DLATCH_1157_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Found 1-bit tristate buffer for signal <OUTS<1>> created at line 61
     Found 1-bit tristate buffer for signal <OUTS<0>> created at line 61
-    Found 32-bit comparator greater for signal <GND_1269_o_ADDR_int[31]_LessThan_245_o> created at line 61
+    Found 32-bit comparator greater for signal <GND_1253_o_ADDR_int[31]_LessThan_245_o> created at line 61
     Summary:
 	inferred 2048 D-type flip-flop(s).
 	inferred  33 Latch(s).
@@ -750,7 +749,7 @@ FlipFlop InstructionMem/DATA_19 has been replicated 2 time(s)
 FlipFlop InstructionMem/DATA_21 has been replicated 4 time(s)
 FlipFlop InstructionMem/DATA_22 has been replicated 3 time(s)
 FlipFlop InstructionMem/DATA_26 has been replicated 1 time(s)
-FlipFlop InstructionMem/DATA_28 has been replicated 1 time(s)
+FlipFlop InstructionMem/DATA_27 has been replicated 1 time(s)
 Latch DataMemoryCom/OUTS[31]_MEM_READ_DLATCH_1095_q has been replicated 1 time(s) to handle iob=true attribute.
 Latch DataMemoryCom/OUTS[31]_MEM_READ_DLATCH_1097_q has been replicated 1 time(s) to handle iob=true attribute.
 Latch DataMemoryCom/OUTS[31]_MEM_READ_DLATCH_1099_q has been replicated 1 time(s) to handle iob=true attribute.
@@ -814,17 +813,17 @@ Top Level Output File Name         : MainModule.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 5129
+# BELS                             : 5133
 #      GND                         : 1
 #      INV                         : 10
 #      LUT1                        : 248
 #      LUT2                        : 3
 #      LUT3                        : 18
-#      LUT4                        : 70
-#      LUT5                        : 92
-#      LUT6                        : 2588
+#      LUT4                        : 83
+#      LUT5                        : 97
+#      LUT6                        : 2573
 #      MUXCY                       : 996
-#      MUXF7                       : 78
+#      MUXF7                       : 79
 #      VCC                         : 1
 #      XORCY                       : 1024
 # FlipFlops/Latches                : 3217
@@ -852,14 +851,14 @@ Selected Device : xa7a100tcsg324-2i
 
 Slice Logic Utilization: 
  Number of Slice Registers:            3185  out of  126800     2%  
- Number of Slice LUTs:                 3029  out of  63400     4%  
-    Number used as Logic:              3029  out of  63400     4%  
+ Number of Slice LUTs:                 3032  out of  63400     4%  
+    Number used as Logic:              3032  out of  63400     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4538
-   Number with an unused Flip Flop:    1353  out of   4538    29%  
-   Number with an unused LUT:          1509  out of   4538    33%  
-   Number of fully used LUT-FF pairs:  1676  out of   4538    36%  
+ Number of LUT Flip Flop pairs used:   4541
+   Number with an unused Flip Flop:    1356  out of   4541    29%  
+   Number with an unused LUT:          1509  out of   4541    33%  
+   Number of fully used LUT-FF pairs:  1676  out of   4541    36%  
    Number of unique control sets:       101
 
 IO Utilization: 
@@ -909,9 +908,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 22.807ns (Maximum Frequency: 43.846MHz)
+   Minimum period: 22.562ns (Maximum Frequency: 44.322MHz)
    Minimum input arrival time before clock: 2.289ns
-   Maximum output required time after clock: 12.058ns
+   Maximum output required time after clock: 11.914ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -920,16 +919,16 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 22.807ns (frequency: 43.846MHz)
-  Total number of paths / destination ports: 37868579 / 6222
+  Clock period: 22.562ns (frequency: 44.322MHz)
+  Total number of paths / destination ports: 36406039 / 6222
 -------------------------------------------------------------------------
-Delay:               11.404ns (Levels of Logic = 22)
+Delay:               11.281ns (Levels of Logic = 23)
   Source:            InstructionMem/DATA_16_3 (FF)
-  Destination:       PC/temp_31 (FF)
+  Destination:       RegisterCom/GEN_REG[0].REGX/tmp_31 (FF)
   Source Clock:      CLK falling
   Destination Clock: CLK rising
 
-  Data Path: InstructionMem/DATA_16_3 to PC/temp_31
+  Data Path: InstructionMem/DATA_16_3 to RegisterCom/GEN_REG[0].REGX/tmp_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -951,19 +950,20 @@ Delay:               11.404ns (Levels of Logic = 22)
      LUT6:I5->O            3   0.097   0.367  AluCom/A21/OneBitAdderX/CarryOut1 (AluCom/carryOut<22>)
      LUT6:I5->O            3   0.097   0.367  AluCom/A23/OneBitAdderX/CarryOut1 (AluCom/carryOut<24>)
      LUT6:I5->O            4   0.097   0.372  AluCom/A25/OneBitAdderX/CarryOut1 (AluCom/carryOut<26>)
-     LUT6:I5->O            2   0.097   0.360  AluCom/A26/OneBitAdderX/CarryOut1 (AluCom/carryOut<27>)
-     LUT6:I5->O            1   0.097   0.355  AluCom/A27/Mux2/Mmux_output_in0_MUX_405_o11_1 (AluCom/A27/Mux2/Mmux_output_in0_MUX_405_o11)
-     LUT6:I5->O            1   0.097   0.743  AluCom/zflag6_SW1_F (N80)
-     LUT6:I1->O           30   0.097   0.484  Mux4/mux_sel_INV_67_o1 (Mux4/mux_sel_INV_67_o)
-     LUT6:I5->O            2   0.097   0.000  Mux5/Mmux_mux_out321 (PCOut_9_OBUF)
-     FDCE:D                    0.008          PC/temp_9
+     LUT6:I5->O            4   0.097   0.372  AluCom/A27/OneBitAdderX/CarryOut1 (AluCom/carryOut<28>)
+     LUT6:I5->O            4   0.097   0.372  AluCom/A29/OneBitAdderX/CarryOut1 (AluCom/carryOut<30>)
+     LUT6:I5->O           18   0.097   0.450  AluCom/A30/Mux2/Mmux_output_in0_MUX_405_o11 (ALUOut_30_OBUF)
+     LUT6:I5->O            1   0.097   0.000  RegisterCom/GEN_REG[0].REGX/Mcount_tmp_lut<30> (RegisterCom/GEN_REG[0].REGX/Mcount_tmp_lut<30>)
+     MUXCY:S->O            0   0.353   0.000  RegisterCom/GEN_REG[0].REGX/Mcount_tmp_cy<30> (RegisterCom/GEN_REG[0].REGX/Mcount_tmp_cy<30>)
+     XORCY:CI->O           1   0.370   0.000  RegisterCom/GEN_REG[0].REGX/Mcount_tmp_xor<31> (RegisterCom/GEN_REG[0].REGX/Mcount_tmp31)
+     FDRE:D                    0.008          RegisterCom/GEN_REG[0].REGX/tmp_31
     ----------------------------------------
-    Total                     11.404ns (2.688ns logic, 8.716ns route)
-                                       (23.6% logic, 76.4% route)
+    Total                     11.281ns (3.314ns logic, 7.967ns route)
+                                       (29.4% logic, 70.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 1876 / 1772
+  Total number of paths / destination ports: 1880 / 1772
 -------------------------------------------------------------------------
 Offset:              2.289ns (Levels of Logic = 3)
   Source:            START (PAD)
@@ -1004,9 +1004,9 @@ Offset:              1.422ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 3792943 / 126
+  Total number of paths / destination ports: 2296480 / 126
 -------------------------------------------------------------------------
-Offset:              12.058ns (Levels of Logic = 23)
+Offset:              11.914ns (Levels of Logic = 23)
   Source:            RegisterCom/GEN_REG[20].REGX/tmp_1 (FF)
   Destination:       PCOut<31> (PAD)
   Source Clock:      CLK rising
@@ -1033,15 +1033,15 @@ Offset:              12.058ns (Levels of Logic = 23)
      LUT6:I5->O            3   0.097   0.367  AluCom/A21/OneBitAdderX/CarryOut1 (AluCom/carryOut<22>)
      LUT6:I5->O            3   0.097   0.367  AluCom/A23/OneBitAdderX/CarryOut1 (AluCom/carryOut<24>)
      LUT6:I5->O            4   0.097   0.372  AluCom/A25/OneBitAdderX/CarryOut1 (AluCom/carryOut<26>)
-     LUT6:I5->O            2   0.097   0.360  AluCom/A26/OneBitAdderX/CarryOut1 (AluCom/carryOut<27>)
-     LUT6:I5->O            1   0.097   0.355  AluCom/A27/Mux2/Mmux_output_in0_MUX_405_o11_1 (AluCom/A27/Mux2/Mmux_output_in0_MUX_405_o11)
-     LUT6:I5->O            1   0.097   0.743  AluCom/zflag6_SW1_F (N80)
-     LUT6:I1->O           30   0.097   0.484  Mux4/mux_sel_INV_67_o1 (Mux4/mux_sel_INV_67_o)
+     LUT6:I5->O            4   0.097   0.372  AluCom/A27/OneBitAdderX/CarryOut1 (AluCom/carryOut<28>)
+     LUT6:I5->O            4   0.097   0.372  AluCom/A29/OneBitAdderX/CarryOut1 (AluCom/carryOut<30>)
+     LUT6:I5->O            1   0.097   0.571  AluCom/A31/Mux2/Mmux_output_in0_MUX_405_o1_1 (AluCom/A31/Mux2/Mmux_output_in0_MUX_405_o1)
+     LUT6:I3->O           30   0.097   0.484  Mux4/mux_sel_INV_67_o1 (Mux4/mux_sel_INV_67_o)
      LUT6:I5->O            2   0.097   0.344  Mux5/Mmux_mux_out321 (PCOut_9_OBUF)
      OBUF:I->O                 0.000          PCOut_9_OBUF (PCOut<9>)
     ----------------------------------------
-    Total                     12.058ns (2.677ns logic, 9.381ns route)
-                                       (22.2% logic, 77.8% route)
+    Total                     11.914ns (2.677ns logic, 9.237ns route)
+                                       (22.5% logic, 77.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DataMemoryCom/MEM_READ_MEM_READ_OR_82_o'
@@ -1074,7 +1074,7 @@ Clock to Setup on destination clock CLK
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
 AluCom1/carryOut<1>                    |         |         |    2.709|         |
-CLK                                    |   11.721|   11.404|    7.653|         |
+CLK                                    |   11.599|   11.281|    7.653|         |
 DataMemoryCom/MEM_READ_MEM_READ_OR_82_o|         |    2.979|         |         |
 ---------------------------------------+---------+---------+---------+---------+
 
@@ -1083,20 +1083,20 @@ Clock to Setup on destination clock DataMemoryCom/MEM_READ_MEM_READ_OR_82_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |         |         |   12.674|         |
+CLK            |         |         |   11.829|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 108.00 secs
-Total CPU time to Xst completion: 108.92 secs
+Total REAL time to Xst completion: 115.00 secs
+Total CPU time to Xst completion: 114.75 secs
  
 --> 
 
-Total memory usage is 848652 kilobytes
+Total memory usage is 841540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   87 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
 Number of infos    :   42 (   0 filtered)
 
